@@ -17,7 +17,7 @@ def main():
 #　テストテーブルに接続し値を全件取り出し接続を切る
 #-------------------
 def db_select():
-    conn = mysql.connector.connect(host='localhost',port='3306',user='soma',password='Souma1993##',database='soma')
+    conn = mysql.connector.connect(host='localhost',port='3306',user='soma',password='',database='soma')
     conn.ping(reconnect=True)
     print(conn.is_connected())
     cur = conn.cursor()
