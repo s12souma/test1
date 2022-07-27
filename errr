@@ -1,0 +1,404 @@
+execve("/usr/bin/mysql", ["mysql"], 0x7ffed3ac3870 /* 23 vars */) = 0
+brk(NULL)                               = 0x56179e8c3000
+arch_prctl(0x3001 /* ARCH_??? */, 0x7ffe17bd9b40) = -1 EINVAL (無効な引数です)
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (そのようなファイルやディレクトリはありません)
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=33150, ...}) = 0
+mmap(NULL, 33150, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fe2cc065000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpthread.so.0", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\220q\0\0\0\0\0\0"..., 832) = 832
+pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0{E6\364\34\332\245\210\204\10\350-\0106\343="..., 68, 824) = 68
+fstat(3, {st_mode=S_IFREG|0755, st_size=157224, ...}) = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fe2cc063000
+pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0{E6\364\34\332\245\210\204\10\350-\0106\343="..., 68, 824) = 68
+mmap(NULL, 140408, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fe2cc040000
+mmap(0x7fe2cc046000, 69632, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6000) = 0x7fe2cc046000
+mmap(0x7fe2cc057000, 24576, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x17000) = 0x7fe2cc057000
+mmap(0x7fe2cc05d000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1c000) = 0x7fe2cc05d000
+mmap(0x7fe2cc05f000, 13432, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fe2cc05f000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libedit.so.2", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\260\217\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=208152, ...}) = 0
+mmap(NULL, 225376, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fe2cc008000
+mmap(0x7fe2cc010000, 110592, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x8000) = 0x7fe2cc010000
+mmap(0x7fe2cc02b000, 57344, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x23000) = 0x7fe2cc02b000
+mmap(0x7fe2cc039000, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x30000) = 0x7fe2cc039000
+mmap(0x7fe2cc03c000, 12384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fe2cc03c000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libdl.so.2", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0 \22\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=18848, ...}) = 0
+mmap(NULL, 20752, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fe2cc002000
+mmap(0x7fe2cc003000, 8192, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1000) = 0x7fe2cc003000
+mmap(0x7fe2cc005000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x7fe2cc005000
+mmap(0x7fe2cc006000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x7fe2cc006000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libz.so.1", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\200\"\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=108936, ...}) = 0
+mmap(NULL, 110776, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fe2cbfe6000
+mprotect(0x7fe2cbfe8000, 98304, PROT_NONE) = 0
+mmap(0x7fe2cbfe8000, 69632, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7fe2cbfe8000
+mmap(0x7fe2cbff9000, 24576, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x13000) = 0x7fe2cbff9000
+mmap(0x7fe2cc000000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x19000) = 0x7fe2cc000000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libssl.so.1.1", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0p\367\1\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=598104, ...}) = 0
+mmap(NULL, 600368, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fe2cbf53000
+mprotect(0x7fe2cbf6f000, 434176, PROT_NONE) = 0
+mmap(0x7fe2cbf6f000, 323584, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1c000) = 0x7fe2cbf6f000
+mmap(0x7fe2cbfbe000, 106496, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6b000) = 0x7fe2cbfbe000
+mmap(0x7fe2cbfd9000, 53248, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x85000) = 0x7fe2cbfd9000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libcrypto.so.1.1", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\220\7\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=2954080, ...}) = 0
+mmap(NULL, 2973600, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fe2cbc7d000
+mmap(0x7fe2cbcf5000, 1683456, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x78000) = 0x7fe2cbcf5000
+mmap(0x7fe2cbe90000, 593920, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x213000) = 0x7fe2cbe90000
+mmap(0x7fe2cbf21000, 188416, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2a3000) = 0x7fe2cbf21000
+mmap(0x7fe2cbf4f000, 16288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fe2cbf4f000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libresolv.so.2", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0 G\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=101352, ...}) = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fe2cbc7b000
+mmap(NULL, 113280, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fe2cbc5f000
+mmap(0x7fe2cbc63000, 65536, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x4000) = 0x7fe2cbc63000
+mmap(0x7fe2cbc73000, 16384, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x14000) = 0x7fe2cbc73000
+mmap(0x7fe2cbc77000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x17000) = 0x7fe2cbc77000
+mmap(0x7fe2cbc79000, 6784, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fe2cbc79000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libstdc++.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0`\341\t\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=1956992, ...}) = 0
+mmap(NULL, 1972224, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fe2cba7d000
+mprotect(0x7fe2cbb13000, 1290240, PROT_NONE) = 0
+mmap(0x7fe2cbb13000, 987136, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x96000) = 0x7fe2cbb13000
+mmap(0x7fe2cbc04000, 299008, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x187000) = 0x7fe2cbc04000
+mmap(0x7fe2cbc4e000, 57344, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1d0000) = 0x7fe2cbc4e000
+mmap(0x7fe2cbc5c000, 10240, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fe2cbc5c000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libgcc_s.so.1", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\3405\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=104984, ...}) = 0
+mmap(NULL, 107592, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fe2cba62000
+mmap(0x7fe2cba65000, 73728, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x7fe2cba65000
+mmap(0x7fe2cba77000, 16384, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x15000) = 0x7fe2cba77000
+mmap(0x7fe2cba7b000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x18000) = 0x7fe2cba7b000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\300A\2\0\0\0\0\0"..., 832) = 832
+pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+pread64(3, "\4\0\0\0\20\0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0", 32, 848) = 32
+pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\30x\346\264ur\f|Q\226\236i\253-'o"..., 68, 880) = 68
+fstat(3, {st_mode=S_IFREG|0755, st_size=2029592, ...}) = 0
+pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+pread64(3, "\4\0\0\0\20\0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0", 32, 848) = 32
+pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\30x\346\264ur\f|Q\226\236i\253-'o"..., 68, 880) = 68
+mmap(NULL, 2037344, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fe2cb870000
+mmap(0x7fe2cb892000, 1540096, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x22000) = 0x7fe2cb892000
+mmap(0x7fe2cba0a000, 319488, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x19a000) = 0x7fe2cba0a000
+mmap(0x7fe2cba58000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1e7000) = 0x7fe2cba58000
+mmap(0x7fe2cba5e000, 13920, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fe2cba5e000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libtinfo.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\240\346\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=192032, ...}) = 0
+mmap(NULL, 194944, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fe2cb840000
+mmap(0x7fe2cb84e000, 61440, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xe000) = 0x7fe2cb84e000
+mmap(0x7fe2cb85d000, 57344, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1d000) = 0x7fe2cb85d000
+mmap(0x7fe2cb86b000, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2a000) = 0x7fe2cb86b000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libbsd.so.0", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0@N\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=96728, ...}) = 0
+mmap(NULL, 102768, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fe2cb826000
+mprotect(0x7fe2cb82a000, 77824, PROT_NONE) = 0
+mmap(0x7fe2cb82a000, 61440, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x4000) = 0x7fe2cb82a000
+mmap(0x7fe2cb839000, 12288, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x13000) = 0x7fe2cb839000
+mmap(0x7fe2cb83d000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x16000) = 0x7fe2cb83d000
+mmap(0x7fe2cb83f000, 368, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fe2cb83f000
+close(3)                                = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fe2cb824000
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\300\323\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=1369384, ...}) = 0
+mmap(NULL, 1368336, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fe2cb6d5000
+mmap(0x7fe2cb6e2000, 684032, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xd000) = 0x7fe2cb6e2000
+mmap(0x7fe2cb789000, 626688, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xb4000) = 0x7fe2cb789000
+mmap(0x7fe2cb822000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x14c000) = 0x7fe2cb822000
+close(3)                                = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fe2cb6d3000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fe2cb6d1000
+arch_prctl(ARCH_SET_FS, 0x7fe2cb6d46c0) = 0
+mprotect(0x7fe2cba58000, 16384, PROT_READ) = 0
+mprotect(0x7fe2cb822000, 4096, PROT_READ) = 0
+mprotect(0x7fe2cb83d000, 4096, PROT_READ) = 0
+mprotect(0x7fe2cb86b000, 16384, PROT_READ) = 0
+mprotect(0x7fe2cba7b000, 4096, PROT_READ) = 0
+mprotect(0x7fe2cbc4e000, 45056, PROT_READ) = 0
+mprotect(0x7fe2cbc77000, 4096, PROT_READ) = 0
+mprotect(0x7fe2cc05d000, 4096, PROT_READ) = 0
+mprotect(0x7fe2cc006000, 4096, PROT_READ) = 0
+mprotect(0x7fe2cbf21000, 180224, PROT_READ) = 0
+mprotect(0x7fe2cbfd9000, 36864, PROT_READ) = 0
+mprotect(0x7fe2cc000000, 4096, PROT_READ) = 0
+mprotect(0x7fe2cc039000, 8192, PROT_READ) = 0
+mprotect(0x56179daa3000, 16384, PROT_READ) = 0
+mprotect(0x7fe2cc09b000, 4096, PROT_READ) = 0
+munmap(0x7fe2cc065000, 33150)           = 0
+set_tid_address(0x7fe2cb6d4990)         = 583
+set_robust_list(0x7fe2cb6d49a0, 24)     = 0
+rt_sigaction(SIGRTMIN, {sa_handler=0x7fe2cc046bf0, sa_mask=[], sa_flags=SA_RESTORER|SA_SIGINFO, sa_restorer=0x7fe2cc054420}, NULL, 8) = 0
+rt_sigaction(SIGRT_1, {sa_handler=0x7fe2cc046c90, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART|SA_SIGINFO, sa_restorer=0x7fe2cc054420}, NULL, 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0
+prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+brk(NULL)                               = 0x56179e8c3000
+brk(0x56179e8e4000)                     = 0x56179e8e4000
+futex(0x7fe2cbc5c6bc, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+futex(0x7fe2cbc5c6c8, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+ioctl(0, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+ioctl(1, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+dup(1)                                  = 3
+close(3)                                = 0
+stat("/etc/my.cnf", 0x7ffe17bd5ad0)     = -1 ENOENT (そのようなファイルやディレクトリはありません)
+stat("/etc/mysql/my.cnf", {st_mode=S_IFREG|0644, st_size=682, ...}) = 0
+openat(AT_FDCWD, "/etc/mysql/my.cnf", O_RDONLY) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=682, ...}) = 0
+read(3, "#\n# The MySQL database server co"..., 4096) = 682
+openat(AT_FDCWD, "/etc/mysql/conf.d/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 4
+fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+getdents64(4, /* 4 entries */, 32768)   = 120
+brk(0x56179e907000)                     = 0x56179e907000
+getdents64(4, /* 0 entries */, 32768)   = 0
+close(4)                                = 0
+stat("/etc/mysql/conf.d/mysql.cnf", {st_mode=S_IFREG|0644, st_size=8, ...}) = 0
+openat(AT_FDCWD, "/etc/mysql/conf.d/mysql.cnf", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=8, ...}) = 0
+read(4, "[mysql]\n", 4096)              = 8
+read(4, "", 4096)                       = 0
+close(4)                                = 0
+stat("/etc/mysql/conf.d/mysqldump.cnf", {st_mode=S_IFREG|0644, st_size=55, ...}) = 0
+openat(AT_FDCWD, "/etc/mysql/conf.d/mysqldump.cnf", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=55, ...}) = 0
+read(4, "[mysqldump]\nquick\nquote-names\nma"..., 4096) = 55
+read(4, "", 4096)                       = 0
+close(4)                                = 0
+brk(0x56179e8ff000)                     = 0x56179e8ff000
+brk(0x56179e8f8000)                     = 0x56179e8f8000
+openat(AT_FDCWD, "/etc/mysql/mysql.conf.d/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 4
+fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+getdents64(4, /* 4 entries */, 32768)   = 112
+getdents64(4, /* 0 entries */, 32768)   = 0
+close(4)                                = 0
+stat("/etc/mysql/mysql.conf.d/mysql.cnf", {st_mode=S_IFREG|0644, st_size=132, ...}) = 0
+openat(AT_FDCWD, "/etc/mysql/mysql.conf.d/mysql.cnf", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=132, ...}) = 0
+read(4, "#\n# The MySQL database client co"..., 4096) = 132
+read(4, "", 4096)                       = 0
+close(4)                                = 0
+stat("/etc/mysql/mysql.conf.d/mysqld.cnf", {st_mode=S_IFREG|0644, st_size=2220, ...}) = 0
+openat(AT_FDCWD, "/etc/mysql/mysql.conf.d/mysqld.cnf", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=2220, ...}) = 0
+read(4, "#\n# The MySQL database server co"..., 4096) = 2220
+read(4, "", 4096)                       = 0
+close(4)                                = 0
+read(3, "", 4096)                       = 0
+close(3)                                = 0
+stat("/home/soma/.my.cnf", 0x7ffe17bd5ad0) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+stat("/home/soma/.mylogin.cnf", 0x7ffe17bd5ad0) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+geteuid()                               = 1000
+socket(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 3
+connect(3, {sa_family=AF_UNIX, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+close(3)                                = 0
+socket(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 3
+connect(3, {sa_family=AF_UNIX, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+close(3)                                = 0
+openat(AT_FDCWD, "/etc/nsswitch.conf", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=510, ...}) = 0
+read(3, "# /etc/nsswitch.conf\n#\n# Example"..., 4096) = 510
+read(3, "", 4096)                       = 0
+close(3)                                = 0
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=33150, ...}) = 0
+mmap(NULL, 33150, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fe2cc065000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libnss_files.so.2", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\3005\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=51856, ...}) = 0
+mmap(NULL, 79672, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fe2cb6bd000
+mmap(0x7fe2cb6c0000, 28672, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x7fe2cb6c0000
+mmap(0x7fe2cb6c7000, 8192, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xa000) = 0x7fe2cb6c7000
+mmap(0x7fe2cb6c9000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xb000) = 0x7fe2cb6c9000
+mmap(0x7fe2cb6cb000, 22328, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fe2cb6cb000
+close(3)                                = 0
+mprotect(0x7fe2cb6c9000, 4096, PROT_READ) = 0
+munmap(0x7fe2cc065000, 33150)           = 0
+openat(AT_FDCWD, "/etc/passwd", O_RDONLY|O_CLOEXEC) = 3
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=1734, ...}) = 0
+read(3, "root:x:0:0:root:/root:/bin/bash\n"..., 4096) = 1734
+close(3)                                = 0
+ioctl(0, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+ioctl(1, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+futex(0x7fe2cbf51818, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+futex(0x7fe2cbf5180c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+futex(0x7fe2cbf51804, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+futex(0x7fe2cbf518d8, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+futex(0x7fe2cbf517f0, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+futex(0x7fe2cbf517e8, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+futex(0x7fe2cbf4ec5c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+futex(0x7fe2cbf516c4, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+futex(0x7fe2cbf5165c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+futex(0x7fe2cbf51650, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+futex(0x7fe2cbf517fc, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+futex(0x7fe2cbf517b8, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+futex(0x7fe2cbf517b0, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+openat(AT_FDCWD, "/usr/lib/ssl/openssl.cnf", O_RDONLY) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=10909, ...}) = 0
+read(3, "#\n# OpenSSL example configuratio"..., 4096) = 4096
+read(3, "# WARNING: ancient versions of N"..., 4096) = 4096
+read(3, "es of the usage of nsCertType. I"..., 4096) = 2717
+brk(0x56179e919000)                     = 0x56179e919000
+read(3, "", 4096)                       = 0
+close(3)                                = 0
+futex(0x7fe2cbf517e0, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+futex(0x7fe2cbfe5840, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+sysinfo({uptime=25895, loads=[0, 0, 0], totalram=9872199680, freeram=9019162624, sharedram=81920, bufferram=67039232, totalswap=3221225472, freeswap=3221225472, procs=213, totalhigh=0, freehigh=0, mem_unit=1}) = 0
+futex(0x7fe2cbfe5928, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+futex(0x7fe2cbfe591c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+socket(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 3
+connect(3, {sa_family=AF_UNIX, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+close(3)                                = 0
+socket(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 3
+connect(3, {sa_family=AF_UNIX, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+close(3)                                = 0
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=33150, ...}) = 0
+mmap(NULL, 33150, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fe2cc065000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/tls/x86_64/x86_64/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+stat("/lib/x86_64-linux-gnu/tls/x86_64/x86_64", 0x7ffe17bd8d20) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/tls/x86_64/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+stat("/lib/x86_64-linux-gnu/tls/x86_64", 0x7ffe17bd8d20) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/tls/x86_64/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+stat("/lib/x86_64-linux-gnu/tls/x86_64", 0x7ffe17bd8d20) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/tls/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+stat("/lib/x86_64-linux-gnu/tls", 0x7ffe17bd8d20) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/x86_64/x86_64/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+stat("/lib/x86_64-linux-gnu/x86_64/x86_64", 0x7ffe17bd8d20) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/x86_64/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+stat("/lib/x86_64-linux-gnu/x86_64", 0x7ffe17bd8d20) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/x86_64/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+stat("/lib/x86_64-linux-gnu/x86_64", 0x7ffe17bd8d20) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+stat("/lib/x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=36864, ...}) = 0
+openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/tls/x86_64/x86_64/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+stat("/usr/lib/x86_64-linux-gnu/tls/x86_64/x86_64", 0x7ffe17bd8d20) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/tls/x86_64/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+stat("/usr/lib/x86_64-linux-gnu/tls/x86_64", 0x7ffe17bd8d20) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/tls/x86_64/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+stat("/usr/lib/x86_64-linux-gnu/tls/x86_64", 0x7ffe17bd8d20) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/tls/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+stat("/usr/lib/x86_64-linux-gnu/tls", 0x7ffe17bd8d20) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/x86_64/x86_64/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+stat("/usr/lib/x86_64-linux-gnu/x86_64/x86_64", 0x7ffe17bd8d20) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/x86_64/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+stat("/usr/lib/x86_64-linux-gnu/x86_64", 0x7ffe17bd8d20) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/x86_64/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+stat("/usr/lib/x86_64-linux-gnu/x86_64", 0x7ffe17bd8d20) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+stat("/usr/lib/x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=36864, ...}) = 0
+openat(AT_FDCWD, "/lib/tls/x86_64/x86_64/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+stat("/lib/tls/x86_64/x86_64", 0x7ffe17bd8d20) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+openat(AT_FDCWD, "/lib/tls/x86_64/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+stat("/lib/tls/x86_64", 0x7ffe17bd8d20) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+openat(AT_FDCWD, "/lib/tls/x86_64/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+stat("/lib/tls/x86_64", 0x7ffe17bd8d20) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+openat(AT_FDCWD, "/lib/tls/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+stat("/lib/tls", 0x7ffe17bd8d20)        = -1 ENOENT (そのようなファイルやディレクトリはありません)
+openat(AT_FDCWD, "/lib/x86_64/x86_64/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+stat("/lib/x86_64/x86_64", 0x7ffe17bd8d20) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+openat(AT_FDCWD, "/lib/x86_64/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+stat("/lib/x86_64", 0x7ffe17bd8d20)     = -1 ENOENT (そのようなファイルやディレクトリはありません)
+openat(AT_FDCWD, "/lib/x86_64/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+stat("/lib/x86_64", 0x7ffe17bd8d20)     = -1 ENOENT (そのようなファイルやディレクトリはありません)
+openat(AT_FDCWD, "/lib/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+stat("/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+openat(AT_FDCWD, "/usr/lib/tls/x86_64/x86_64/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+stat("/usr/lib/tls/x86_64/x86_64", 0x7ffe17bd8d20) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+openat(AT_FDCWD, "/usr/lib/tls/x86_64/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+stat("/usr/lib/tls/x86_64", 0x7ffe17bd8d20) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+openat(AT_FDCWD, "/usr/lib/tls/x86_64/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+stat("/usr/lib/tls/x86_64", 0x7ffe17bd8d20) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+openat(AT_FDCWD, "/usr/lib/tls/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+stat("/usr/lib/tls", 0x7ffe17bd8d20)    = -1 ENOENT (そのようなファイルやディレクトリはありません)
+openat(AT_FDCWD, "/usr/lib/x86_64/x86_64/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+stat("/usr/lib/x86_64/x86_64", 0x7ffe17bd8d20) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+openat(AT_FDCWD, "/usr/lib/x86_64/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+stat("/usr/lib/x86_64", 0x7ffe17bd8d20) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+openat(AT_FDCWD, "/usr/lib/x86_64/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+stat("/usr/lib/x86_64", 0x7ffe17bd8d20) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+openat(AT_FDCWD, "/usr/lib/libnss_db.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+stat("/usr/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+munmap(0x7fe2cc065000, 33150)           = 0
+openat(AT_FDCWD, "/etc/services", O_RDONLY|O_CLOEXEC) = 3
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=14464, ...}) = 0
+read(3, "# Network services, Internet sty"..., 4096) = 4096
+lseek(3, 0, SEEK_CUR)                   = 4096
+read(3, "lient\t546/udp\ndhcpv6-server\t547/"..., 4096) = 4096
+close(3)                                = 0
+rt_sigaction(SIGPIPE, {sa_handler=SIG_IGN, sa_mask=[PIPE], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fe2cb8b3090}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+openat(AT_FDCWD, "/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=4095264, ...}) = 0
+mmap(NULL, 4095264, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fe2cb2d5000
+close(3)                                = 0
+stat("/usr/share/mysql/charsets/Index.xml", {st_mode=S_IFREG|0644, st_size=19474, ...}) = 0
+openat(AT_FDCWD, "/usr/share/mysql/charsets/Index.xml", O_RDONLY) = 3
+read(3, "<?xml version='1.0' encoding=\"ut"..., 19474) = 19474
+close(3)                                = 0
+futex(0x56179dda2ed0, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+getpid()                                = 583
+socket(AF_UNIX, SOCK_STREAM, 0)         = 3
+connect(3, {sa_family=AF_UNIX, sun_path="/var/run/mysqld/mysqld.sock"}, 110) = 0
+setsockopt(3, SOL_TCP, TCP_NODELAY, [1], 4) = -1 EOPNOTSUPP (サポートされていない操作です)
+setsockopt(3, SOL_SOCKET, SO_KEEPALIVE, [1], 4) = 0
+recvfrom(3, "[\0\0\0\n8.0.29-0ubuntu0.20.04.3\0\36\0\0"..., 16384, 0, NULL, NULL) = 95
+geteuid()                               = 1000
+openat(AT_FDCWD, "/proc/self/loginuid", O_RDONLY) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+ioctl(0, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+fstat(0, {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0), ...}) = 0
+readlink("/proc/self/fd/0", "/dev/pts/0", 511) = 10
+stat("/dev/pts/0", {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0), ...}) = 0
+access("/var/run/utmpx", F_OK)          = -1 ENOENT (そのようなファイルやディレクトリはありません)
+openat(AT_FDCWD, "/var/run/utmp", O_RDONLY|O_CLOEXEC) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+access("/var/run/utmpx", F_OK)          = -1 ENOENT (そのようなファイルやディレクトリはありません)
+openat(AT_FDCWD, "/var/run/utmp", O_RDONLY|O_CLOEXEC) = -1 ENOENT (そのようなファイルやディレクトリはありません)
+geteuid()                               = 1000
+openat(AT_FDCWD, "/etc/passwd", O_RDONLY|O_CLOEXEC) = 4
+lseek(4, 0, SEEK_CUR)                   = 0
+fstat(4, {st_mode=S_IFREG|0644, st_size=1734, ...}) = 0
+read(4, "root:x:0:0:root:/root:/bin/bash\n"..., 4096) = 1734
+close(4)                                = 0
+sendto(3, "\257\0\0\1\205\246\377\31\0\0\0\1\377\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 179, 0, NULL, 0) = 179
+recvfrom(3, ",\0\0\2\376mysql_native_password\0@!c\0013"..., 16384, 0, NULL, NULL) = 48
+sendto(3, "\0\0\0\3", 4, 0, NULL, 0)    = 4
+recvfrom(3, "G\0\0\4\377\25\4#28000Access denied for u"..., 16384, 0, NULL, NULL) = 75
+shutdown(3, SHUT_RDWR)                  = 0
+close(3)                                = 0
+fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0), ...}) = 0
+write(2, "ERROR 1045 (28000): ", 20ERROR 1045 (28000): )    = 20
+write(2, "Access denied for user 'soma'@'l"..., 62Access denied for user 'soma'@'localhost' (using password: NO)) = 62
+write(2, "\n", 1
+)                       = 1
+write(1, "\7", 1)                       = 1
+rt_sigaction(SIGQUIT, {sa_handler=SIG_IGN, sa_mask=[QUIT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fe2cb8b3090}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGINT, {sa_handler=SIG_IGN, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fe2cb8b3090}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGHUP, {sa_handler=SIG_IGN, sa_mask=[HUP], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fe2cb8b3090}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+exit_group(1)                           = ?
++++ exited with 1 +++
